@@ -1,0 +1,201 @@
+/*GENERAL STYLING*/
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p, a {
+  line-height: 2;
+}
+
+a {
+  color: blue;
+}
+
+
+.left-column {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.left-column img {
+  height: auto;
+  width: 100%;
+}
+
+.right-column {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+/*HEADER SECTION*/
+
+header {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+header .navbar {
+  display: flex;/*
+  align-items: center;*/
+}
+
+.navbar {
+  height: 4rem;
+}
+
+.logo {
+  flex-grow: 1;
+  margin-left: 1.5rem;
+}
+
+nav ul {
+  margin-right: 1.5rem;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+
+
+
+/*BANNER SECTION*/
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner-right {
+  width: 20%;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.banner-right h1 {
+  text-align: left;
+}
+
+
+
+#button {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem auto;
+}
+
+
+/*TOP BODY SECTION*/
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.box-right {
+  display: inline-flex;
+  max-width: 65%;
+}
+
+.BRR {
+  align-items: center;
+}
+
+.box img {
+  max-width: 35%;
+  margin: 1rem;
+}
+
+.box h3 {
+  line-height: 1.25;
+}
+
+#citation {
+  margin: 1rem 0;
+}
+
+/*MIDDLE BODY SECTION*/
+
+.middle {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.middle {
+  padding: 0 4.5rem 2rem 4.5rem;
+}
+
+.course {
+  width: 30%;
+  justify-content: space-between;
+}
+
+.course-title, .subtitle, .course-list {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.course-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-list {
+  margin-bottom: 1.5rem;
+}
+
+/*BOTTOM BODY SECTION*/
+
+video {
+  width: 100%;
+}
+
+.bottom-content {
+  display: flex;
+}
+
+.bottom-content .left-column, .bottom-content .right-column {
+  margin-top: 0;
+}
+
+/*FOOTER SECTION*/
+
+footer {
+  width: 100%;
+  display: inline-flex;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+}
+
+footer span {/*
+  display: inline-flex;*/
+  flex-grow: 1;/*
+margin-left: 1.5rem;*/
+}

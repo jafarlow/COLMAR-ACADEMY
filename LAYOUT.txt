@@ -1,0 +1,83 @@
+HEADER
+
+BANNER
+-study photo
+- Headline
+- minor headline
+- START HERE box
+
+MAIN BODY
+- LEFT COLUMN
+	- man reading photo
+	- Headline
+	- paragraph
+	- citation
+- RIGHT COLUMN
+	- Block 1
+		- aerial photo
+		- H2
+		- SPAN
+		- LINK
+	- Block 2
+		- restaurant photo
+		- H2
+		- SPAN
+		- LINK
+	- Block 3
+		- bearded man photo
+		- H2
+		- SPAN
+		- LINK
+
+SECONDARY BODY
+- Headline
+- FLEX BOXES
+- Box 1
+	- computer photo
+	- title
+	- subtitle
+	- description
+- Box 2
+	- phone photo
+	- title
+	- subtitle
+	- description
+- Box 3
+	- camera photo
+	- title
+	- subtitle
+	- description
+- Box 4
+	- laptop photo
+	- title
+	- subtitle
+	- description
+- Box 5
+	- chess photo
+	- title
+	- subtitle
+	- description
+- Box 6
+	- watch photo
+	- title
+	- subtitle
+	- description
+
+TERTIARY BODY
+- Headline
+- LEFT COLUMN
+	- Embedded video
+	- Title
+	- Description
+- RIGHT COLUMN
+	- Box 1
+		- schoolwork photo
+		- Title
+		- description
+	- Box 2
+		- NY photo
+		- title
+		- description
+
+FOOTER
+- FLEX GROW BET. COPYRIGHT & LINKS
