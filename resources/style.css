@@ -76,8 +76,13 @@ header {
   align-items: center;
 }
 
+.nav-list {
+  overflow: hidden;
+}
+
 .navbar {
   height: 4rem;
+  width: 100%;
 }
 
 .logo {
@@ -128,9 +133,10 @@ nav li {
 }
 
 .banner-right {
-  width: 20%;
-  text-align: left;
+  width: 40%;
+  text-align: left;/*
   padding-left: 1.5rem;
+  margin-right: 1rem;*/
 }
 
 .banner-right h1 {
@@ -167,9 +173,13 @@ nav li {
   .banner-right {
     width: 100%;
     overflow: hidden;
+    padding-left: 0;
   }
   .right-column {
     width: 100%;
+  }
+  #button {
+    margin-bottom: 1rem;
   }
 }
 
@@ -220,6 +230,10 @@ nav li {
   .box {
     flex-direction: column;
     width: 100%;
+    padding: 0;
+  }
+  .box img {
+    width: 100%;
   }
   .box-right{
     width: 100%;
@@ -230,6 +244,7 @@ nav li {
   .mobile-img {
     display: inherit;
     width: 100%;
+
   }
 
 }
@@ -289,16 +304,23 @@ nav li {
   .middle {
     display: initial;
     width: 100%;
+    padding: 0;
+  }
+  .mid {
+    margin-bottom: 1rem;
   }
   .course {
     width: 100%;
-    margin: 1rem;
+    margin-bottom: 1rem;
   }
   .course-sub {
     height: initial;
+    padding: 1rem;
+    margin: 1rem;
   }
   .course-title {
     margin: 0;
+
   }
 }
 
@@ -314,6 +336,16 @@ video {
 
 .bottom-content .left-column, .bottom-content .right-column {
   margin-top: 0;
+}
+
+@media only screen and (max-width: 720px) {
+  .bottom-content .left-column h3, .bottom-content .left-column p {
+    display: none;
+  }
+  .bottom-content .right-column {
+    display: none;
+  }
+
 }
 
 /*FOOTER SECTION*/
