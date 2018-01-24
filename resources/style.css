@@ -41,7 +41,6 @@ a {
   color: blue;
 }
 
-
 .left-column {
   width: 60%;
   margin: 2rem 1.5rem;
@@ -99,29 +98,32 @@ nav li {
   padding: 0 1rem;
 }
 
-
 .mobile-nav-list {
     display: none;
 }
 
 @media only screen and (max-width: 720px) {
-  .logo span {
+  .logo {
     display: none;
   }
   .nav-list {
     display: none;
   }
   .mobile-nav-list {
-    display: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
   }
-  .logo {
-    flex-grow: 0;
+  .mobile-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .navbar, .logo, .mobile-nav-list {
     justify-content: space-between;
   }
 }
-
 
 /*BANNER SECTION*/
 
@@ -134,9 +136,8 @@ nav li {
 
 .banner-right {
   width: 40%;
-  text-align: left;/*
-  padding-left: 1.5rem;
-  margin-right: 1rem;*/
+  text-align: left;
+  padding: 0 1rem;
 }
 
 .banner-right h1 {
@@ -147,7 +148,6 @@ nav li {
   line-height: 2;
 }
 
-
 #button {
   display: flex;
   width: 100%;
@@ -155,10 +155,21 @@ nav li {
   color: white;
   background-color: black;
   justify-content: center;
-  padding: 0.5rem auto;
+  padding: 0.5rem 0;
   align-items: center;
   margin-top: 2rem;
   opacity: 0.7;
+}
+
+#button span {
+  font-size: 1.5rem;
+}
+
+#button:hover {
+  opacity: 0.9;
+  transition-property: opacity;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
 }
 
 @media only screen and (max-width: 720px) {
@@ -173,13 +184,16 @@ nav li {
   .banner-right {
     width: 100%;
     overflow: hidden;
-    padding-left: 0;
+    padding: 0;
+  }
+  .banner-right span, .banner-right h1 {
+    padding-left: 1rem;
   }
   .right-column {
     width: 100%;
   }
   #button {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -231,9 +245,11 @@ nav li {
     flex-direction: column;
     width: 100%;
     padding: 0;
+    padding-bottom: 1rem;
   }
   .box img {
     width: 100%;
+    margin: 0;
   }
   .box-right{
     width: 100%;
@@ -244,9 +260,11 @@ nav li {
   .mobile-img {
     display: inherit;
     width: 100%;
-
   }
-
+  .BRR {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 }
 
 /*MIDDLE BODY SECTION*/
@@ -270,10 +288,8 @@ nav li {
   padding: 0 4.5rem 2rem 4.5rem;
 }
 
-
 .course {
   width: 30%;
-
 }
 
 .course-title, .subtitle, .course-list {
@@ -308,19 +324,18 @@ nav li {
   }
   .mid {
     margin-bottom: 1rem;
+    border-bottom: 1px solid #a2a5ad;
   }
   .course {
     width: 100%;
-    margin-bottom: 1rem;
   }
   .course-sub {
     height: initial;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
   }
   .course-title {
     margin: 0;
-
   }
 }
 
@@ -345,7 +360,6 @@ video {
   .bottom-content .right-column {
     display: none;
   }
-
 }
 
 /*FOOTER SECTION*/
@@ -355,7 +369,7 @@ footer {
   display: inline-flex;
   height: 4rem;
   align-items: center;
-  border: 1px solid #a2a5ad;
+  border-top: 1px solid #a2a5ad;
 }
 
 footer span {
